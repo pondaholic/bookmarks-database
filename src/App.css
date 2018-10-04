@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .bookmarks {
 	display: flex;
 	flex-direction: column;
@@ -14,15 +18,17 @@ header {
 }
 
 form {
+	width: 50%;
 	padding: 7px;
 }
 
 input {
+	width: 100%;
 	padding: 3px;
 	margin: 5px;
 }
 
-#bookmark-url {
+/* #bookmark-url {
 	width: 350px;
 }
 
@@ -36,7 +42,7 @@ input {
 
 #bookmark-rating {
 	width: 338px;
-}
+} */
 
 .App-header {
 	background-color: #222;
@@ -47,4 +53,10 @@ input {
 
 button {
 	margin: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+	input {
+		flex-grow: 1;
+	}
 }
